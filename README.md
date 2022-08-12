@@ -56,3 +56,10 @@ flex-direction  :
         flex-end
         center
         baseline
+
+## flex子项
+
+order,flex-grow,flex-shrink,flex-basis,flex,align-self
+
+### flex-grow扩展比例
+    flex-grow: 0 默认值是0，表示不占用剩余的空白间隙扩展自己的宽度
