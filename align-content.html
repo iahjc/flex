@@ -4,14 +4,16 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>flex-wrap</title>
+        <title>Document</title>
         <style>
            .main {
             width: 500px;
             height: 500px;
             background-color: skyblue;
             display: flex;
-            flex-direction: space-evenly;
+            flex-wrap: wrap;
+            /* flex-direction: row-reverse; */
+            align-content: space-around;
            } 
            .main div {
             width: 100px;
@@ -26,10 +28,10 @@
             <div>1</div>
             <div>2</div>
             <div>3</div>
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
-            <div>6</div>
+            <div>3</div>
+            <div>3</div>
+            <div>3</div>
+            <div>3</div>
         </div>
     </body>
 </html>

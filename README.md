@@ -21,4 +21,38 @@ flex-direction  :
 ### 换行与缩写 flex-wrap
 
     flex-wrap :
+        no-wrap 默认
+        wrap  折行
+        wrap-reverse 反向折行
+        column 
+        column-reverse
 
+### flex-flow 是 flex-direction flex-wrap的缩写
+    flex-flow: cloumn wrap;
+
+### justify-content 主轴对齐
+    justify-content:
+        flex-start 默认
+        flex-end
+        center
+        space-around
+        space-between
+        space-evenly
+
+### align-content 交叉轴对齐详解 不折行的情况下 这个属性不生效
+    align-content:
+        stretch 默认 拉伸 没有高度会自动拉伸
+        flex-start
+        flex-end 
+        center 
+        space-around
+        space-between
+        space-evenly
+
+### align-items  每一行的对其方式
+    align-items:
+        stretch 
+        flex-start
+        flex-end
+        center
+        baseline
