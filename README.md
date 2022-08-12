@@ -62,4 +62,7 @@ flex-direction  :
 order,flex-grow,flex-shrink,flex-basis,flex,align-self
 
 ### flex-grow扩展比例
-    flex-grow: 0 默认值是0，表示不占用剩余的空白间隙扩展自己的宽度
+    flex-grow: 0 默认值是0，表示不占用剩余的空白间隙扩展自己的宽度 
+               1 比例指为1，就占满剩余所有的空间
+               0.5 比例为0.5 就占有剩余空间的一半
+               2 当比例值大于等于1的时候都会占满整个空间
