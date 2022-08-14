@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="reset.css">
+</head>
+<body>
+
+    <style>
+        .header {
+          width: 100%;
+        }
+
+        .header-container {
+            min-width: 780px;
+            max-width: 960px;
+            margin: 0 auto;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            background: #ccc;
+            align-items: center;
+        }
+
+        .header-left {
+            display: flex;
+        }
+        .header-left ul {
+            display: flex;
+            list-style: none;
+        }
+    </style>
+
+    <div class="header">
+        <div class="header-container">
+            <div class="header-left">
+                <h2>知乎</h2>
+                <ul>
+                    <li>首页</li>
+                    <li>会员</li>
+                    <li>发现</li>
+                    <li>等你来答</li>
+                </ul>
+            </div>
+            <div class="header-content">
+                <input type="text" placeholder="520文案"/>
+            </div>
+            <div class="header-right">
+                <a href="">登录</a>
+                <a href="">加入知乎</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

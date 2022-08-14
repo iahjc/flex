@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>两列与三列布局</title>
+</head>
+<body>
+    <h2>两列布局</h2>
+    <style>
+        .main {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            background-color: azure;
+        }
+        .main div {
+            height: 100px;
+        }
+
+        .main div:nth-of-type(1) {
+            background: pink;
+            width: 100px;
+        }
+
+        .main div:nth-of-type(2) {
+            background: #ccc;
+            flex-grow: 1;
+        }
+
+    </style>
+    <div class="main">
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+    </div>
+
+    <style>
+        .main2 {
+            width: 100%;
+            height: 100px;
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: space-between;
+        }
+        .main2 div:nth-of-type(1) {
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+        }
+
+        .main2 div:nth-of-type(2) {
+            height: 100px;
+            background-color:black;
+            flex-grow: 1;
+        }
+
+        .main2 div:nth-of-type(3) {
+            width: 100px;
+            height: 100px;
+            background-color:blue;
+        }
+    </style>
+    <h2>三列布局</h2>
+    <div class="main2">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <h2>传统实现 定位实现</h2>
+    <style>
+        .main3 {
+            width: 100%;
+            height: 100px;
+            display: block;
+            background-color: azure;
+            /* overflow: hidden; */
+        }
+        .main3 div {
+            height: 100px;
+        }
+
+        .main3 div:nth-of-type(1) {
+            background: pink;
+            width: 100px;
+            float: left;
+        }
+
+        .main3 div:nth-of-type(2) {
+            background: #ccc;
+            /* margin-left: 100px; */
+            overflow: hidden; /*或者触发bfc*/
+        }
+    </style>
+    <div class="main3">
+        <div></div>
+        <div>22</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="reset.css"/>
+</head>
+<body>
+
+    <style>
+        .swiper-container {
+            width: 600px;
+            height: 300px;
+            background-color: aliceblue;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .swiper-container .swiper-wrapper {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            /* overflow: hidden; */
+            transition: .5s;
+            transform: translateX(-500px);
+        }
+
+        .swiper-container .swiper-wrapper .swiper-slide {
+            height: 100%;
+            width: 100%;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                slide 1
+            </div>
+            <div class="swiper-slide">
+                <p>slide 2</p>
+            </div>
+            <div class="swiper-slide">
+                slide 3
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+    
+</body>
+</html>

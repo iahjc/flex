@@ -66,3 +66,30 @@ order,flex-grow,flex-shrink,flex-basis,flex,align-self
                1 比例指为1，就占满剩余所有的空间
                0.5 比例为0.5 就占有剩余空间的一半
                2 当比例值大于等于1的时候都会占满整个空间
+
+### flex-shrink 收缩比例
+    flex-shrink: 默认值是1，表示flex容器空间不足时，元素的收缩比例
+                 0.5 溢出部分 收缩一半
+                 0 不收缩
+
+### flex-basis及flex缩写
+    默认值是auto,指定了flex元素在主轴方向上的初始大小  
+    0 最小宽度
+    100% 跟容器相同
+    固定像素 
+
+### flex 缩写
+    flex属性是flex-grow flex-shrink和flex-basis的缩写
+    flex：1 表示 flex-grow: 1; flex-shrink: 1; flex-basis: 0%
+    flex: 1 表示：flex-grow: 0; flex-shrink:1; flex-basis: 0%
+    flex: auto 表示： flex-grow: 1; flex-shrink: 1; flex-basis: auto 
+    flex: 1 0 50%
+
+### order 排序
+    默认0 改变某一个flex子项的排序位置
+    1  优先级低
+    -1 优先级低
+    
+### align-self 
+    默认值是auto，控制单独某一个flex子项的垂直对齐方式
+    单独控制某一个元素的对其方式

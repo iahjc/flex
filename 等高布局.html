@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>等高布局 -- 子项默认拉伸</title>
+    <style>
+        .main {
+            display: flex;
+        }
+
+        .main div {
+            background: pink;
+            margin-right: 10px;
+        }
+
+        .main div:nth-of-type(1) {
+
+        }
+
+        .main div:nth-of-type(2) {
+            
+        }
+    </style>
+</head>
+<body>
+    <h2>子项默认拉伸</h2>
+    <div class="main">
+        <div>
+            <h3>测试内容</h3>
+            <h3>测试内容</h3>
+            <h3>测试内容</h3>
+            <h3>测试内容</h3>
+        </div>
+
+        <div>
+            <h3>等高布局</h3>
+            <h3>等高布局</h3>
+            <h3>等高布局</h3>
+            <h3>等高布局</h3>
+            <h3>等高布局</h3>
+            <h3>等高布局</h3>
+            <h3>等高布局</h3>
+            <h3>等高布局</h3>
+        </div>
+    </div>
+
+    <h2>传统实现等高布局</h2>
+    
+    <style>
+        .main2 {
+            width: 500px;
+            background: skyblue;
+            overflow: hidden;
+        }
+
+        .main2 div  {
+            background: #ccc;
+            width: 100px;
+            margin-bottom: -2000px;
+            padding-bottom: 2000px;
+            float: left;
+        }
+
+        .main2 div:nth-of-type(2) {
+            float: right;
+        }
+
+        .main2
+    </style>
+
+    <div class="main2">
+        <div>
+            <h3>测试内容</h3>
+            <h3>测试内容</h3>
+            <h3>测试内容</h3>
+            <h3>测试内容</h3>
+        </div>
+
+        <div>
+            <h3>等高布局</h3>
+            <!-- 
+            <h3>等高布局</h3>
+            <h3>等高布局</h3>
+            <h3>等高布局</h3>
+            <h3>等高布局</h3>
+            <h3>等高布局</h3>
+            <h3>等高布局</h3>
+            <h3>等高布局</h3> -->
+        </div>
+    </div>
+
+</body>
+</html>
